@@ -136,7 +136,7 @@ Due to the nature of crypto trading, exchanges and accounts are always vulnerabl
 ## Conclusions
 The extreme volatility leads to both opportunities and risks that don’t exist in classic securities trading. It is not an equivalent or a substitute for equities, but for a trader with a high risk appetite, it can be a valuable asset as a small percentage of a portfolio. Overall, I believe the term cryptocurrency is a misnomer since it is hard to use as currency or rely on to retain value. 
 
-<ub>Opportunities</b>
+<b>Opportunities</b>
 
 *	Extreme volatility leads to extreme performance (sometimes!)
 
@@ -146,7 +146,7 @@ The extreme volatility leads to both opportunities and risks that don’t exist 
 
 *	Innovation and disruption of traditional systems of power
 
-<ub>Risks</b>
+<b>Risks</b>
 
 *	Challenging to use as currency or liquidate
 
