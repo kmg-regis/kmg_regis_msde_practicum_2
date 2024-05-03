@@ -16,27 +16,27 @@ I created a set of Python class objects that interact with each other as shown i
 ## Portfolio Setup
 I decided on seven cryptocurrencies to track:
 
-•	<b>Bitcoin</b> (BTC) & <b>Ethereum</b> (ETH): oldest, established, relatively stable
+*	<b>Bitcoin</b> (BTC) & <b>Ethereum</b> (ETH): oldest, established, relatively stable
 
-•	<b>Dogecoin</b> (DOGE) & <b>Shiba Inu</b> (SHIB): meme coins, started as jokes
+*	<b>Dogecoin</b> (DOGE) & <b>Shiba Inu</b> (SHIB): meme coins, started as jokes
 
-•	<b>Solana</b> (SOL) & <b>Cardano</b> (ADA) & <b>Ripple</b> (XRP): newest, more volatile
+*	<b>Solana</b> (SOL) & <b>Cardano</b> (ADA) & <b>Ripple</b> (XRP): newest, more volatile
 
 I also pulled <b>S&P 500</b> pricing data to see how these currencies perform against a basic equity standard.
 
 Using these, I developed seven different trader profiles:
 
-•	<u>Simple Trader</u>: trades only one currency (one of each)
+*	<u>Simple Trader</u>: trades only one currency (one of each)
 
-•	<u>Standard Trader</u>: BTC & ETH only
+*	<u>Standard Trader</u>: BTC & ETH only
 
-•	<u>Meme Trader</u>: DOGE & SHIB only
+*	<u>Meme Trader</u>: DOGE & SHIB only
 
-•	<u>Cutting Edge Trader</u>: SOL, ADA & XRP only
+*	<u>Cutting Edge Trader</u>: SOL, ADA & XRP only
 
-•	<u>Diversified Trader</u>: All 7 cryptocurrencies
+*	<u>Diversified Trader</u>: All 7 cryptocurrencies
 
-•	<u>Traditional Trader</u>: S&P 500 only
+*	<u>Traditional Trader</u>: S&P 500 only
 
 This configuration represents twelve different portfolios: one for each single currency, plus the combination portfolios, plus the S&P portfolio.
 
@@ -44,15 +44,16 @@ The currencies represented a wide range of USD prices, so I set the increments o
 
 ## Strategy Design
 I designed four trading strategies to test against my data:
+
 ![strategy_setup](https://github.com/kmg-regis/kmg_regis_msde_practicum_2/blob/main/images/strategy_setup.png)
 
-•	Each portfolio starts with <b>$100k USD cash on 1/1/2023
+*	Each portfolio starts with <b>$100k USD cash</b> on 1/1/2023
 
-•	The testing runs from <b>1/1/2023</b> to <b>2/29/2024</b>
+*	The testing runs from <b>1/1/2023</b> to <b>2/29/2024</b>
 
-•	Transaction fees are fixed at <b>0.1%</b>; slippage is fixed at <b>0.05%</b>
+*	Transaction fees are fixed at <b>0.1%</b>; slippage is fixed at <b>0.05%</b>
 
-•	Trades execute at <u>midpoint between high and low price</u> for the time period. 
+*	Trades execute at <u>midpoint between high and low price</u> for the time period. 
 
 ## Data Sources
 Unlike equity markets, crypto trading platforms are siloed and do not share pricing data. To account for price disparity between platforms, I pulled historic pricing data from two of the “most trusted” crypto trading platforms, according to Coinmarketcap.com: Binance and Coinbase. My S&P 500 pricing data came from Yahoo Finance. 
@@ -66,13 +67,13 @@ The results of each individual test can be found in my Performance Test Results 
 
 There was a <u>36% mean difference</u> in performance results between the Binance and Coinbase data. This massive disparity can be explained by several factors:
 
-•	As mentioned, crypto trading platforms are siloed and do not share pricing data
+*	As mentioned, crypto trading platforms are siloed and do not share pricing data
 
-•	Binance has about 10x the trade volume and 8x the weekly visitors of Coinbase, meaning prices on Binance are likely more reflective of the true market price
+*	Binance has about 10x the trade volume and 8x the weekly visitors of Coinbase, meaning prices on Binance are likely more reflective of the true market price
 
-•	The more volatile currencies had greater price disparity than the more stable ones
+*	The more volatile currencies had greater price disparity than the more stable ones
 
-•	The shorter time window of the Binance data captured more volatility
+*	The shorter time window of the Binance data captured more volatility
 
 This does mean that there are opportunities to profit via cross-platform arbitrage, but it is a risky and complex process due to the unpredictable amount of time that transactions take.
 
@@ -82,27 +83,27 @@ This does mean that there are opportunities to profit via cross-platform arbitra
 
 The table above displays the mean performance for each strategy, as well as the best & worst performance, and the S&P 500 portfolio performance for comparison. 
 
-•	<b>Buy & Hold</b> performed best overall
+*	<b>Buy & Hold</b> performed best overall
    
-   o	Heavily boosted by SOL, which grew by over 1000% 
+   -	Heavily boosted by SOL, which grew by over 1000% 
    
-   o	This is an unrealistic approach to trading, but it shows how much of the performance of each strategy can be attributed to the overall market growth.
+   -	This is an unrealistic approach to trading, but it shows how much of the performance of each strategy can be attributed to the overall market growth.
 
-•	<b>Momentum</b> was the big surprise with very high performance
+*	<b>Momentum</b> was the big surprise with very high performance
 
-  o	As a “bandwagon strategy” (buy when it’s rising, sell when it’s dipping), I expected it to do poorly – but due to high market volatility, it profited 
+  -	As a “bandwagon strategy” (buy when it’s rising, sell when it’s dipping), I expected it to do poorly – but due to high market volatility, it profited 
 
-  o	Momentum trading requires constant price monitoring and quick reactions to market changes
+  -	Momentum trading requires constant price monitoring and quick reactions to market changes
   
-  o	The S&P 500 performance was flat because it never hit the 10% volatility threshold to trigger a buy or a sell – meaning the close price was never 10% higher or lower than the previous day’s close price. This is normal for equities.
+  -	The S&P 500 performance was flat because it never hit the 10% volatility threshold to trigger a buy or a sell – meaning the close price was never 10% higher or lower than the previous day’s close price. This is normal for equities.
 
-•	<b>Dollar Cost Averaging</b> had the most consistent returns overall, as seen in the density distribution chart below. 
+*	<b>Dollar Cost Averaging</b> had the most consistent returns overall, as seen in the density distribution chart below. 
 
-•	<b>Moving Average Crossover</b> performed worst, but still got great returns overall
+*	<b>Moving Average Crossover</b> performed worst, but still got great returns overall
 
- o	S&P performance was flat because a buy was never triggered. This is understandable, since MAC is a strategy usually applied to multiple individual stocks in a portfolio, rather than an index fund which has steadier performance due to being a composite.
+ -	S&P performance was flat because a buy was never triggered. This is understandable, since MAC is a strategy usually applied to multiple individual stocks in a portfolio, rather than an index fund which has steadier performance due to being a composite.
 
- o	Accordingly, the MAC strategy performed best with the diversified crypto portfolio.
+ -	Accordingly, the MAC strategy performed best with the diversified crypto portfolio.
 
 The KDE chart below shows the density distribution of returns for each strategy. 
  
@@ -113,15 +114,15 @@ The KDE chart below shows the density distribution of returns for each strategy.
  ![trader_style_graph](https://github.com/kmg-regis/kmg_regis_msde_practicum_2/blob/main/images/trader_style_graph.png) 
  ![trader_style_perf_table](https://github.com/kmg-regis/kmg_regis_msde_practicum_2/blob/main/images/trader_style_perf_table.png)
  
-•	Solana (SOL) was the clear winner of this time period
+*	Solana (SOL) was the clear winner of this time period
 
-   o	#2 Cutting Edge and #3 Diversified portfolios both had SOL exposure as well
+   -	#2 Cutting Edge and #3 Diversified portfolios both had SOL exposure as well
 
-•	S&P 500 portfolio performance highlighted as Traditional
+*	S&P 500 portfolio performance highlighted as Traditional
    
-   o	9.7% is a good performance for 14 months in an equity portfolio, but almost every other crypto portfolio beat it during this period (even the meme coins!) 
+   -	9.7% is a good performance for 14 months in an equity portfolio, but almost every other crypto portfolio beat it during this period (even the meme coins!) 
 
-•	Over a longer period of time (5+ years), Bitcoin (BTC) would win, as it has shown most consistent growth
+*	Over a longer period of time (5+ years), Bitcoin (BTC) would win, as it has shown most consistent growth
 
 ## Risks
 The 14 months that these tests covered were an extremely good time period for the crypto market overall. However, in 2022 the market crashed hard, losing an estimated <b>~$2 trillion</b> in value. Many people’s entire life savings were wiped out due to the extreme losses and collapses triggered by this downswing.
@@ -137,30 +138,31 @@ The extreme volatility leads to both opportunities and risks that don’t exist 
 
 <u>Opportunities</u>
 
-•	Extreme volatility leads to extreme performance (sometimes!)
+*	Extreme volatility leads to extreme performance (sometimes!)
 
-•	Global access & markets never close
+*	Global access & markets never close
 
-•	Speculation and diversification 
+*	Speculation and diversification 
 
-•	Innovation and disruption of traditional systems of power
+*	Innovation and disruption of traditional systems of power
 
 <u>Risks</u>
 
-•	Challenging to use as currency or liquidate
+*	Challenging to use as currency or liquidate
 
-•	No investor protections
+*	No investor protections
 
-•	Cybersecurity issues
+*	Cybersecurity issues
 
-•	Industry is rife with fraud and scams
+*	Industry is rife with fraud and scams
 
-•	Legal & regulatory uncertainty
+*	Legal & regulatory uncertainty
 
-•	Transactions are complex; transaction fees and timing are unpredictable
+*	Transactions are complex; transaction fees and timing are unpredictable
 
 ## Future Possibilities
 In a future version, this backtesting engine could be designed to take in data over a longer timeframe, continue adding newer data, and run tests regularly as the market changes. 
+
 The Portfolio could also be designed to accept a custom balance of currencies and cash in order to track a specific configuration, reflecting real-life holdings.
 
 The ability to predict future prices is limited due to the extreme volatility of the cryptocurrency market. 
