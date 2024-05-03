@@ -26,17 +26,17 @@ I also pulled <b>S&P 500</b> pricing data to see how these currencies perform ag
 
 Using these, I developed seven different trader profiles:
 
-*	<u>Simple Trader</u>: trades only one currency (one of each)
+*	<b>Simple Trader</b>: trades only one currency (one of each)
 
-*	<u>Standard Trader</u>: BTC & ETH only
+*	<b>Standard Trader</b>: BTC & ETH only
 
-*	<u>Meme Trader</u>: DOGE & SHIB only
+*	<b>Meme Trader</b>: DOGE & SHIB only
 
-*	<u>Cutting Edge Trader</u>: SOL, ADA & XRP only
+*	<b>Cutting Edge Trader</b>: SOL, ADA & XRP only
 
-*	<u>Diversified Trader</u>: All 7 cryptocurrencies
+*	<b>Diversified Trader</b>: All 7 cryptocurrencies
 
-*	<u>Traditional Trader</u>: S&P 500 only
+*	<b>Traditional Trader</b>: S&P 500 only
 
 This configuration represents twelve different portfolios: one for each single currency, plus the combination portfolios, plus the S&P portfolio.
 
@@ -65,7 +65,7 @@ I ran each of the 4 strategies on the 11 crypto portfolios, for two different da
 The results of each individual test can be found in my Performance Test Results excel file. 
 
 
-There was a <u>36% mean difference</u> in performance results between the Binance and Coinbase data. This massive disparity can be explained by several factors:
+There was a <b>36% mean difference</b> in performance results between the Binance and Coinbase data. This massive disparity can be explained by several factors:
 
 *	As mentioned, crypto trading platforms are siloed and do not share pricing data
 
@@ -85,25 +85,25 @@ The table above displays the mean performance for each strategy, as well as the 
 
 *	<b>Buy & Hold</b> performed best overall
    
-   -	Heavily boosted by SOL, which grew by over 1000% 
+     -	Heavily boosted by SOL, which grew by over 1000% 
    
-   -	This is an unrealistic approach to trading, but it shows how much of the performance of each strategy can be attributed to the overall market growth.
+     -	This is an unrealistic approach to trading, but it shows how much of the performance of each strategy can be attributed to the overall market growth.
 
 *	<b>Momentum</b> was the big surprise with very high performance
 
-  -	As a “bandwagon strategy” (buy when it’s rising, sell when it’s dipping), I expected it to do poorly – but due to high market volatility, it profited 
+     -	As a “bandwagon strategy” (buy when it’s rising, sell when it’s dipping), I expected it to do poorly – but due to high market volatility, it profited 
 
-  -	Momentum trading requires constant price monitoring and quick reactions to market changes
+     -	Momentum trading requires constant price monitoring and quick reactions to market changes
   
-  -	The S&P 500 performance was flat because it never hit the 10% volatility threshold to trigger a buy or a sell – meaning the close price was never 10% higher or lower than the previous day’s close price. This is normal for equities.
+     -	The S&P 500 performance was flat because it never hit the 10% volatility threshold to trigger a buy or a sell – meaning the close price was never 10% higher or lower than the previous day’s close price. This is normal for equities.
 
 *	<b>Dollar Cost Averaging</b> had the most consistent returns overall, as seen in the density distribution chart below. 
 
 *	<b>Moving Average Crossover</b> performed worst, but still got great returns overall
 
- -	S&P performance was flat because a buy was never triggered. This is understandable, since MAC is a strategy usually applied to multiple individual stocks in a portfolio, rather than an index fund which has steadier performance due to being a composite.
+    -	S&P performance was flat because a buy was never triggered. This is understandable, since MAC is a strategy usually applied to multiple individual stocks in a portfolio, rather than an index fund which has steadier performance due to being a composite.
 
- -	Accordingly, the MAC strategy performed best with the diversified crypto portfolio.
+    -	Accordingly, the MAC strategy performed best with the diversified crypto portfolio.
 
 The KDE chart below shows the density distribution of returns for each strategy. 
  
@@ -116,11 +116,11 @@ The KDE chart below shows the density distribution of returns for each strategy.
  
 *	Solana (SOL) was the clear winner of this time period
 
-   -	#2 Cutting Edge and #3 Diversified portfolios both had SOL exposure as well
+     -	#2 Cutting Edge and #3 Diversified portfolios both had SOL exposure as well
 
 *	S&P 500 portfolio performance highlighted as Traditional
    
-   -	9.7% is a good performance for 14 months in an equity portfolio, but almost every other crypto portfolio beat it during this period (even the meme coins!) 
+     -	9.7% is a good performance for 14 months in an equity portfolio, but almost every other crypto portfolio beat it during this period (even the meme coins!) 
 
 *	Over a longer period of time (5+ years), Bitcoin (BTC) would win, as it has shown most consistent growth
 
@@ -136,7 +136,7 @@ Due to the nature of crypto trading, exchanges and accounts are always vulnerabl
 ## Conclusions
 The extreme volatility leads to both opportunities and risks that don’t exist in classic securities trading. It is not an equivalent or a substitute for equities, but for a trader with a high risk appetite, it can be a valuable asset as a small percentage of a portfolio. Overall, I believe the term cryptocurrency is a misnomer since it is hard to use as currency or rely on to retain value. 
 
-<u>Opportunities</u>
+<ub>Opportunities</b>
 
 *	Extreme volatility leads to extreme performance (sometimes!)
 
@@ -146,7 +146,7 @@ The extreme volatility leads to both opportunities and risks that don’t exist 
 
 *	Innovation and disruption of traditional systems of power
 
-<u>Risks</u>
+<ub>Risks</b>
 
 *	Challenging to use as currency or liquidate
 
